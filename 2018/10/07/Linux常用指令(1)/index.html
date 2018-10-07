@@ -20,7 +20,7 @@
 <meta property="og:url" content="http://mingbolg.cn/2018/10/07/Linux常用指令(1)/index.html">
 <meta property="og:site_name" content="Ming blog">
 <meta property="og:description" content="最近由于工作需要在学习Linux，在接下来的几篇博客里，我会介绍Linux的常用指令。以供大家借鉴学习，共同进步。">
-<meta property="og:updated_time" content="2018-10-07T08:05:20.940Z">
+<meta property="og:updated_time" content="2018-10-07T08:12:32.356Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用指令(1)">
 <meta name="twitter:description" content="最近由于工作需要在学习Linux，在接下来的几篇博客里，我会介绍Linux的常用指令。以供大家借鉴学习，共同进步。">
@@ -169,14 +169,22 @@
         <p>最近由于工作需要在学习Linux，在接下来的几篇博客里，我会介绍Linux的常用指令。以供大家借鉴学习，共同进步。</p>
 <a id="more"></a>
 <h2 id="ls命令："><a href="#ls命令：" class="headerlink" title="ls命令："></a>ls命令：</h2><ul>
-<li>格式：：ls [选项] [目录或文件] </li>
+<li>格式：ls [选项] [目录或文件] </li>
 <li>功能：对于目录，列出该目录下的所有子目录与文件；对于文件，列出文件名以及其他信息。 </li>
 <li>常用选项： <blockquote>
 <p>-a ：列出目录下的所有文件，包括以 . 开头的隐含文件。<br>-d ：将目录像文件一样显示，而不是显示其他文件。<br>-i  ：输出文件的i节点的索引信息。<br>-k ：以k字节的形式表示文件的大小。<br>-l  ：列出文件的详细信息。<br>-n ：用数字的UID,GID代替名称。<br>-F :   在每个文件名后面附上一个字符以说明该文件的类型，“*”表示可执行的普通文   件；“/”表示目录；“@”表示符号链接；“l”表示FIFOS；“=”表示套接字。</p>
 </blockquote>
 </li>
 </ul>
-<h2 id="cat-命令"><a href="#cat-命令" class="headerlink" title="cat 命令"></a>cat 命令</h2>
+<h2 id="cat命令："><a href="#cat命令：" class="headerlink" title="cat命令："></a>cat命令：</h2><ul>
+<li>格式：cat [选项] [–help] [–version] 文件名</li>
+<li>功能：用于连接文件并打印到标准输出设备上。</li>
+<li>常用选项：<blockquote>
+<p>-n 或 –number：由 1 开始对所有输出的行数编号。<br>-b 或 –number-nonblank：和 -n 相似，只不过对于空白行不编号。<br>-s 或 –squeeze-blank：当遇到有连续两行以上的空白行，就代换为一行的空白行。<br>-v 或 –show-nonprinting：使用 ^ 和 M- 符号，除了 LFD 和 TAB 之外。<br>-E 或 –show-ends : 在每行结束处显示 $。<br>-T 或 –show-tabs: 将 TAB 字符显示为 ^I。<br>-e : 等价于 -vE。<br>-A, –show-all：等价于 -vET。<br>-e：等价于”-vE”选项；<br>-t：等价于”-vT”选项；</p>
+</blockquote>
+</li>
+</ul>
+
       
       
       
@@ -292,7 +300,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#ls命令："><span class="toc-number">1.</span> <span class="toc-text">ls命令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cat-命令"><span class="toc-number">2.</span> <span class="toc-text">cat 命令</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#ls命令："><span class="toc-number">1.</span> <span class="toc-text">ls命令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cat命令："><span class="toc-number">2.</span> <span class="toc-text">cat命令：</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -449,14 +457,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">后端</a>
               </li>
              
@@ -470,6 +470,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">手机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
